@@ -1,0 +1,290 @@
+[
+  {
+    "pair": [
+      "RAINFOREST_RESIN",
+      "EMERALDS"
+    ],
+    "beta": 0.0017,
+    "alpha": 9982.63,
+    "gamma": -0.981738,
+    "half_life": 0.7,
+    "spread_mean": 0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0036,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "KELP",
+      "EMERALDS"
+    ],
+    "beta": 0.0007,
+    "alpha": 9998.56,
+    "gamma": -0.981793,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0082,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "SQUID_INK",
+      "EMERALDS"
+    ],
+    "beta": -0.0,
+    "alpha": 10000.04,
+    "gamma": -0.981712,
+    "half_life": 0.7,
+    "spread_mean": 0.0,
+    "spread_std": 0.72,
+    "correlation": -0.0017,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "CROISSANTS",
+      "EMERALDS"
+    ],
+    "beta": 0.0003,
+    "alpha": 9998.74,
+    "gamma": -0.981738,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0055,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "JAMS",
+      "EMERALDS"
+    ],
+    "beta": 0.0,
+    "alpha": 9999.92,
+    "gamma": -0.981712,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0006,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "PICNIC_BASKET1",
+      "EMERALDS"
+    ],
+    "beta": 0.0,
+    "alpha": 9999.67,
+    "gamma": -0.981713,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0015,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "PICNIC_BASKET2",
+      "EMERALDS"
+    ],
+    "beta": -0.0,
+    "alpha": 10000.17,
+    "gamma": -0.981713,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": -0.0011,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "DJEMBES",
+      "EMERALDS"
+    ],
+    "beta": 0.0,
+    "alpha": 9999.51,
+    "gamma": -0.981713,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0014,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "VOLCANIC_ROCK_VOUCHER_10500",
+      "EMERALDS"
+    ],
+    "beta": 0.0002,
+    "alpha": 9999.99,
+    "gamma": -0.98174,
+    "half_life": 0.7,
+    "spread_mean": 0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0057,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "VOLCANIC_ROCK_VOUCHER_10000",
+      "EMERALDS"
+    ],
+    "beta": 0.0,
+    "alpha": 9999.98,
+    "gamma": -0.981728,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0043,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "VOLCANIC_ROCK_VOUCHER_9750",
+      "EMERALDS"
+    ],
+    "beta": 0.0,
+    "alpha": 9999.97,
+    "gamma": -0.981727,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0042,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "VOLCANIC_ROCK_VOUCHER_9500",
+      "EMERALDS"
+    ],
+    "beta": 0.0,
+    "alpha": 9999.97,
+    "gamma": -0.981727,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0042,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "VOLCANIC_ROCK_VOUCHER_10250",
+      "EMERALDS"
+    ],
+    "beta": 0.0001,
+    "alpha": 9999.99,
+    "gamma": -0.981731,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0047,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "VOLCANIC_ROCK",
+      "EMERALDS"
+    ],
+    "beta": 0.0,
+    "alpha": 9999.63,
+    "gamma": -0.981728,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": 0.0042,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "MAGNIFICENT_MACARONS",
+      "EMERALDS"
+    ],
+    "beta": -0.0001,
+    "alpha": 10000.05,
+    "gamma": -0.981753,
+    "half_life": 0.7,
+    "spread_mean": -0.0,
+    "spread_std": 0.72,
+    "correlation": -0.0065,
+    "datapoints": 20000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "VOLCANIC_ROCK_VOUCHER_9500",
+      "VOLCANIC_ROCK"
+    ],
+    "beta": 1.0014,
+    "alpha": 9498.62,
+    "gamma": -0.581304,
+    "half_life": 1.2,
+    "spread_mean": 0.0,
+    "spread_std": 0.42,
+    "correlation": 1.0,
+    "datapoints": 123000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "VOLCANIC_ROCK_VOUCHER_9750",
+      "VOLCANIC_ROCK_VOUCHER_9500"
+    ],
+    "beta": 1.0216,
+    "alpha": 237.41,
+    "gamma": -0.044307,
+    "half_life": 15.6,
+    "spread_mean": 0.0,
+    "spread_std": 3.41,
+    "correlation": 0.9998,
+    "datapoints": 123000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  },
+  {
+    "pair": [
+      "VOLCANIC_ROCK_VOUCHER_9750",
+      "VOLCANIC_ROCK"
+    ],
+    "beta": 1.023,
+    "alpha": 9736.38,
+    "gamma": -0.035687,
+    "half_life": 19.4,
+    "spread_mean": -0.0,
+    "spread_std": 3.67,
+    "correlation": 0.9998,
+    "datapoints": 123000,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5
+  }
+]

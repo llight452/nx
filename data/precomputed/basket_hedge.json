@@ -1,0 +1,38 @@
+{
+  "PICNIC_BASKET1": {
+    "components": [
+      "CROISSANTS",
+      "JAMS",
+      "DJEMBES"
+    ],
+    "weights": {
+      "CROISSANTS": 4.587302133114212,
+      "JAMS": 3.60425059972853,
+      "DJEMBES": 1.3935998410398172
+    },
+    "intercept": -3160.083879674443,
+    "mean_spread": -2.6719405865057922e-11,
+    "std_spread": 101.5637350207464,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5,
+    "found_days": 24,
+    "datapoints": 195000
+  },
+  "PICNIC_BASKET2": {
+    "components": [
+      "CROISSANTS",
+      "JAMS"
+    ],
+    "weights": {
+      "CROISSANTS": 3.68793404503856,
+      "JAMS": 1.7690899080192874
+    },
+    "intercept": 2893.0986010706433,
+    "mean_spread": -2.010223957208487e-11,
+    "std_spread": 63.235396654373645,
+    "zscore_entry": 2.0,
+    "zscore_exit": 0.5,
+    "found_days": 24,
+    "datapoints": 195000
+  }
+}

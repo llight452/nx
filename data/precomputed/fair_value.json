@@ -1,0 +1,172 @@
+{
+  "RAINFOREST_RESIN": {
+    "mean_price": 10000.005624,
+    "optimal_ema_alpha": 0.01,
+    "prediction_mse": 4.008765373570046,
+    "volatility": 0.00028150381955679255,
+    "autocorrelation": -0.4961731959517727,
+    "trend_slope": 0.0018322958073499116,
+    "mean_reversion": true,
+    "datapoints": 250000
+  },
+  "KELP": {
+    "mean_price": 2035.657532,
+    "optimal_ema_alpha": 0.3,
+    "prediction_mse": 0.41020755475845655,
+    "volatility": 0.0003854498212552404,
+    "autocorrelation": -0.47079846983025947,
+    "trend_slope": 0.003909472736817439,
+    "mean_reversion": true,
+    "datapoints": 250000
+  },
+  "SQUID_INK": {
+    "mean_price": 1893.9855914634147,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 4.9320224159248305,
+    "volatility": 0.0010571241575290744,
+    "autocorrelation": -0.06658269092402969,
+    "trend_slope": -0.10425335633391294,
+    "mean_reversion": false,
+    "datapoints": 246000
+  },
+  "CROISSANTS": {
+    "mean_price": 4276.728107692307,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 0.28927932997643524,
+    "volatility": 0.00011350993032804358,
+    "autocorrelation": -0.07360296883684846,
+    "trend_slope": -0.017503562589077568,
+    "mean_reversion": false,
+    "datapoints": 195000
+  },
+  "JAMS": {
+    "mean_price": 6534.727405128205,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 0.7563049270757553,
+    "volatility": 0.00011588461710782082,
+    "autocorrelation": -0.010982134424281921,
+    "trend_slope": 0.0010474011849985047,
+    "mean_reversion": false,
+    "datapoints": 195000
+  },
+  "PICNIC_BASKET1": {
+    "mean_price": 58665.02691282051,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 34.39684047463696,
+    "volatility": 8.72544328570736e-05,
+    "autocorrelation": -0.021304359781926758,
+    "trend_slope": 0.17835220880499045,
+    "mean_reversion": false,
+    "datapoints": 195000
+  },
+  "PICNIC_BASKET2": {
+    "mean_price": 30225.910094871793,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 12.825210087759768,
+    "volatility": 0.0001028143751337527,
+    "autocorrelation": -0.011921345351463365,
+    "trend_slope": 0.10607815195368349,
+    "mean_reversion": false,
+    "datapoints": 195000
+  },
+  "DJEMBES": {
+    "mean_price": 13385.24237948718,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 1.6090776035293015,
+    "volatility": 8.079181190218305e-05,
+    "autocorrelation": 0.0213767228998373,
+    "trend_slope": 0.1092961074026386,
+    "mean_reversion": false,
+    "datapoints": 195000
+  },
+  "VOLCANIC_ROCK_VOUCHER_10500": {
+    "mean_price": 15.454073170731707,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 0.41272898482114534,
+    "volatility": NaN,
+    "autocorrelation": NaN,
+    "trend_slope": 2.437560939023107e-05,
+    "mean_reversion": false,
+    "datapoints": 123000
+  },
+  "VOLCANIC_ROCK_VOUCHER_10000": {
+    "mean_price": 208.48452032520325,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 9.77100017962422,
+    "volatility": 0.0467264416468833,
+    "autocorrelation": -0.33817533348208406,
+    "trend_slope": -0.026731043276082264,
+    "mean_reversion": true,
+    "datapoints": 123000
+  },
+  "VOLCANIC_ROCK_VOUCHER_9750": {
+    "mean_price": 427.77557723577235,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 11.07595559069227,
+    "volatility": 0.010577259379245252,
+    "autocorrelation": -0.08783611041616418,
+    "trend_slope": -0.02634440861021698,
+    "mean_reversion": false,
+    "datapoints": 123000
+  },
+  "VOLCANIC_ROCK_VOUCHER_9500": {
+    "mean_price": 674.4256829268293,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 11.376103361448585,
+    "volatility": 0.005132426713241499,
+    "autocorrelation": 0.005100492912571703,
+    "trend_slope": -0.026276906922678252,
+    "mean_reversion": false,
+    "datapoints": 123000
+  },
+  "VOLCANIC_ROCK_VOUCHER_10250": {
+    "mean_price": 68.30155284552845,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 2.44655138334026,
+    "volatility": 0.09563400956390668,
+    "autocorrelation": -0.07989418305426618,
+    "trend_slope": -0.01873959348983747,
+    "mean_reversion": false,
+    "datapoints": 123000
+  },
+  "VOLCANIC_ROCK": {
+    "mean_price": 10173.995386178862,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 11.367282391332271,
+    "volatility": 0.0002866172189734975,
+    "autocorrelation": 0.008209348814766324,
+    "trend_slope": -0.02603690092256801,
+    "mean_reversion": false,
+    "datapoints": 123000
+  },
+  "MAGNIFICENT_MACARONS": {
+    "mean_price": 729.6955731707317,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 9.477819228017207,
+    "volatility": 0.003937140826173786,
+    "autocorrelation": -0.04991054290096356,
+    "trend_slope": -0.15125515637891357,
+    "mean_reversion": false,
+    "datapoints": 82000
+  },
+  "EMERALDS": {
+    "mean_price": 9999.9976,
+    "optimal_ema_alpha": 0.01,
+    "prediction_mse": 0.5262006122120498,
+    "volatility": 0.00010135380069168971,
+    "autocorrelation": -0.48753899660598293,
+    "trend_slope": 0.00041401035027114686,
+    "mean_reversion": true,
+    "datapoints": 20000
+  },
+  "TOMATOES": {
+    "mean_price": 4992.758125,
+    "optimal_ema_alpha": 0.5,
+    "prediction_mse": 1.3799200966163772,
+    "volatility": 0.0002685995071637508,
+    "autocorrelation": -0.42025519262749955,
+    "trend_slope": -0.01789544738621459,
+    "mean_reversion": true,
+    "datapoints": 20000
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "dashboard/lib.py": {
+    "params": {
+      "window": [
+        10.0
+      ]
+    },
+    "lines": 115
+  },
+  "round1/round1_main_v0.py": {
+    "params": {
+      "fair_value": [
+        10000.0
+      ],
+      "position_limit": [
+        20.0,
+        20.0
+      ]
+    },
+    "lines": 227
+  },
+  "round1/round_1_cleaned_v1.py": {
+    "params": {
+      "fair_value": [
+        10000.0
+      ],
+      "position_limit": [
+        20.0,
+        20.0
+      ]
+    },
+    "lines": 174
+  },
+  "round1/round_1_cleaned_v2.py": {
+    "params": {
+      "fair_value": [
+        10000.0
+      ],
+      "position_limit": [
+        20.0,
+        20.0
+      ]
+    },
+    "lines": 219
+  },
+  "round5/lib.py": {
+    "params": {
+      "window": [
+        10.0
+      ]
+    },
+    "lines": 115
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "basket_hedge": {
+    "status": "DONE",
+    "details": "2 baskets computed",
+    "timestamp": "2026-03-23 01:52:36"
+  },
+  "bot_models": {
+    "status": "DONE",
+    "details": "10 bots analyzed",
+    "timestamp": "2026-03-23 01:53:44"
+  },
+  "cointegration": {
+    "status": "DONE",
+    "details": "18 pairs found",
+    "timestamp": "2026-03-23 01:54:28"
+  },
+  "calibration": {
+    "status": "DONE",
+    "details": "17 products",
+    "timestamp": "2026-03-23 01:55:00"
+  },
+  "iv_surface": {
+    "status": "DONE",
+    "details": "6 strikes",
+    "timestamp": "2026-03-23 01:56:19"
+  },
+  "spread_optimizer": {
+    "status": "DONE",
+    "details": "17 products optimized",
+    "timestamp": "2026-03-23 01:56:54"
+  },
+  "optuna_multiday": {
+    "status": "RUNNING",
+    "details": "",
+    "timestamp": "2026-03-23 07:05:46"
+  },
+  "fair_value": {
+    "status": "DONE",
+    "details": "17 products",
+    "timestamp": "2026-03-23 02:22:34"
+  },
+  "regime_markov": {
+    "status": "RUNNING",
+    "details": "",
+    "timestamp": "2026-03-23 02:22:40"
+  },
+  "order_flow": {
+    "status": "DONE",
+    "details": "17 products",
+    "timestamp": "2026-03-23 02:29:19"
+  },
+  "p2_strategies": {
+    "status": "DONE",
+    "details": "5 strategy files extracted",
+    "timestamp": "2026-03-23 02:29:25"
+  }
+}

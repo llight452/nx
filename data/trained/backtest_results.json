@@ -1,0 +1,186 @@
+{
+  "type": "baseline",
+  "total_pnl": -288.0,
+  "mean_pnl": -9.0,
+  "n_days": 32,
+  "product_totals": {
+    "KELP": 0.0,
+    "RAINFOREST_RESIN": -232.0,
+    "SQUID_INK": -56.0,
+    "CROISSANTS": 0.0,
+    "DJEMBES": 0.0,
+    "JAMS": 0.0,
+    "PICNIC_BASKET1": 0.0,
+    "PICNIC_BASKET2": 0.0,
+    "VOLCANIC_ROCK": 0.0,
+    "VOLCANIC_ROCK_VOUCHER_10000": 0.0,
+    "VOLCANIC_ROCK_VOUCHER_10250": 0.0,
+    "VOLCANIC_ROCK_VOUCHER_10500": 0.0,
+    "VOLCANIC_ROCK_VOUCHER_9500": 0.0,
+    "VOLCANIC_ROCK_VOUCHER_9750": 0.0,
+    "MAGNIFICENT_MACARONS": 0.0
+  },
+  "per_day": [
+    {
+      "round": 0,
+      "day": -1,
+      "pnl": 3.0
+    },
+    {
+      "round": 1,
+      "day": -2,
+      "pnl": -1.0
+    },
+    {
+      "round": 1,
+      "day": -1,
+      "pnl": 3.0
+    },
+    {
+      "round": 1,
+      "day": 0,
+      "pnl": -5.0
+    },
+    {
+      "round": 2,
+      "day": -1,
+      "pnl": -25.0
+    },
+    {
+      "round": 2,
+      "day": 0,
+      "pnl": -39.0
+    },
+    {
+      "round": 2,
+      "day": 1,
+      "pnl": -21.0
+    },
+    {
+      "round": 3,
+      "day": 0,
+      "pnl": -39.0
+    },
+    {
+      "round": 3,
+      "day": 1,
+      "pnl": -21.0
+    },
+    {
+      "round": 3,
+      "day": 2,
+      "pnl": -20.0
+    },
+    {
+      "round": 4,
+      "day": 1,
+      "pnl": -21.0
+    },
+    {
+      "round": 4,
+      "day": 2,
+      "pnl": -20.0
+    },
+    {
+      "round": 4,
+      "day": 3,
+      "pnl": -4.0
+    },
+    {
+      "round": 5,
+      "day": 2,
+      "pnl": -20.0
+    },
+    {
+      "round": 5,
+      "day": 3,
+      "pnl": -4.0
+    },
+    {
+      "round": 5,
+      "day": 4,
+      "pnl": -4.0
+    },
+    {
+      "round": 6,
+      "day": 0,
+      "pnl": 3.0
+    },
+    {
+      "round": 6,
+      "day": 1,
+      "pnl": -4.0
+    },
+    {
+      "round": 6,
+      "day": 2,
+      "pnl": -4.0
+    },
+    {
+      "round": 6,
+      "day": 3,
+      "pnl": 0.0
+    },
+    {
+      "round": 6,
+      "day": 4,
+      "pnl": -3.0
+    },
+    {
+      "round": 6,
+      "day": 5,
+      "pnl": -16.0
+    },
+    {
+      "round": 6,
+      "day": 6,
+      "pnl": 3.0
+    },
+    {
+      "round": 7,
+      "day": 0,
+      "pnl": -4.0
+    },
+    {
+      "round": 7,
+      "day": 1,
+      "pnl": -4.0
+    },
+    {
+      "round": 7,
+      "day": 2,
+      "pnl": -3.0
+    },
+    {
+      "round": 7,
+      "day": 3,
+      "pnl": -4.0
+    },
+    {
+      "round": 7,
+      "day": 4,
+      "pnl": -4.0
+    },
+    {
+      "round": 7,
+      "day": 5,
+      "pnl": -4.0
+    },
+    {
+      "round": 8,
+      "day": -1,
+      "pnl": 3.0
+    },
+    {
+      "round": 8,
+      "day": 0,
+      "pnl": -5.0
+    },
+    {
+      "round": 8,
+      "day": 1,
+      "pnl": -4.0
+    }
+  ],
+  "timestamp": "2026-03-22 18:46:41"
+}

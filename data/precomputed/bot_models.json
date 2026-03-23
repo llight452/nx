@@ -1,0 +1,152 @@
+{
+  "Caesar": {
+    "trades": 30425,
+    "buy_ratio": 0.544,
+    "avg_qty": 6.4,
+    "qty_std": 4.9,
+    "price_aggression": 36.15,
+    "timing_regularity": 0.627,
+    "top_products": {
+      "JAMS": 3591,
+      "VOLCANIC_ROCK": 3222,
+      "DJEMBES": 3215,
+      "CROISSANTS": 3050,
+      "VOLCANIC_ROCK_VOUCHER_9750": 2951
+    },
+    "predictable": false
+  },
+  "Paris": {
+    "trades": 23432,
+    "buy_ratio": 0.473,
+    "avg_qty": 2.7,
+    "qty_std": 2.5,
+    "price_aggression": 0.72,
+    "timing_regularity": 0.644,
+    "top_products": {
+      "KELP": 5953,
+      "SQUID_INK": 5903,
+      "RAINFOREST_RESIN": 2899,
+      "DJEMBES": 2879,
+      "JAMS": 2595
+    },
+    "predictable": false
+  },
+  "Camilla": {
+    "trades": 19519,
+    "buy_ratio": 0.701,
+    "avg_qty": 9.1,
+    "qty_std": 5.2,
+    "price_aggression": -51.83,
+    "timing_regularity": 0.633,
+    "top_products": {
+      "VOLCANIC_ROCK_VOUCHER_9750": 2781,
+      "VOLCANIC_ROCK_VOUCHER_9500": 2726,
+      "VOLCANIC_ROCK_VOUCHER_10000": 2571,
+      "VOLCANIC_ROCK_VOUCHER_10250": 2086,
+      "SQUID_INK": 1801
+    },
+    "predictable": true
+  },
+  "Olivia": {
+    "trades": 20,
+    "buy_ratio": 0.5,
+    "avg_qty": 9.9,
+    "qty_std": 6.0,
+    "price_aggression": 54.32,
+    "timing_regularity": 0.646,
+    "top_products": {
+      "KELP": 7,
+      "SQUID_INK": 7,
+      "CROISSANTS": 6
+    },
+    "predictable": false
+  },
+  "Charlie": {
+    "trades": 17883,
+    "buy_ratio": 0.585,
+    "avg_qty": 3.5,
+    "qty_std": 3.5,
+    "price_aggression": 0.61,
+    "timing_regularity": 0.641,
+    "top_products": {
+      "SQUID_INK": 6272,
+      "KELP": 6258,
+      "RAINFOREST_RESIN": 4564,
+      "MAGNIFICENT_MACARONS": 409,
+      "PICNIC_BASKET2": 353
+    },
+    "predictable": false
+  },
+  "Gina": {
+    "trades": 1263,
+    "buy_ratio": 0.342,
+    "avg_qty": 5.8,
+    "qty_std": 3.1,
+    "price_aggression": -6.63,
+    "timing_regularity": 0.643,
+    "top_products": {
+      "KELP": 465,
+      "SQUID_INK": 446,
+      "RAINFOREST_RESIN": 352
+    },
+    "predictable": false
+  },
+  "Pablo": {
+    "trades": 8080,
+    "buy_ratio": 0.275,
+    "avg_qty": 4.7,
+    "qty_std": 3.5,
+    "price_aggression": -245.69,
+    "timing_regularity": 0.624,
+    "top_products": {
+      "RAINFOREST_RESIN": 1500,
+      "SQUID_INK": 1084,
+      "KELP": 1080,
+      "PICNIC_BASKET1": 964,
+      "PICNIC_BASKET2": 755
+    },
+    "predictable": true
+  },
+  "Penelope": {
+    "trades": 7782,
+    "buy_ratio": 0.485,
+    "avg_qty": 7.8,
+    "qty_std": 5.0,
+    "price_aggression": 230.74,
+    "timing_regularity": 0.636,
+    "top_products": {
+      "VOLCANIC_ROCK_VOUCHER_9750": 1051,
+      "VOLCANIC_ROCK_VOUCHER_9500": 1047,
+      "RAINFOREST_RESIN": 1035,
+      "KELP": 992,
+      "SQUID_INK": 970
+    },
+    "predictable": false
+  },
+  "Gary": {
+    "trades": 1599,
+    "buy_ratio": 0.508,
+    "avg_qty": 8.5,
+    "qty_std": 4.1,
+    "price_aggression": -2.17,
+    "timing_regularity": 0.648,
+    "top_products": {
+      "KELP": 610,
+      "SQUID_INK": 610,
+      "RAINFOREST_RESIN": 379
+    },
+    "predictable": false
+  },
+  "Peter": {
+    "trades": 424,
+    "buy_ratio": 0.469,
+    "avg_qty": 7.5,
+    "qty_std": 1.8,
+    "price_aggression": -9.61,
+    "timing_regularity": 0.61,
+    "top_products": {
+      "VOLCANIC_ROCK": 424
+    },
+    "predictable": false
+  }
+}

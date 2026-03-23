@@ -1,0 +1,77 @@
+# ═══════════════════════════════════════════════════════════════════
+# PNL METHODS STATUS — 38 методов, сортировка по потенциалу
+# Обновляется: ./imc4.sh bg-status
+# ═══════════════════════════════════════════════════════════════════
+#
+# [%]   = процент вычислений завершён
+# Код   = код написан и работает
+# Данные = precomputed данные готовы
+# Файл  = где лежит результат
+#
+# ═══════════════════════════════════════════════════════════════════
+
+ #  | Метод                      | Потенциал/день | Код | Данные | [%]  | Файл/Статус
+----|----------------------------|----------------|-----|--------|------|------------------------------------------
+  1 | PRNG Cracker               |   1,000,000+   | ДА  |  НЕТ   |   0% | ждёт P4 live данные
+  2 | HAR Hidden API             |     500,000    | ДА  |  НЕТ   |   0% | ждёт сайт IMC → data/har/
+  3 | Conversion Arb             |     100,000    | ДА  |  НЕТ   |   0% | ждёт P4 продукт с конверсиями
+  4 | Manual Bot (CDP)           |     100,000    | ДА  |  НЕТ   |   0% | ждёт мануальный раунд + Chrome
+  5 | Basket Hedge Calculator    |      50,000    | ДА  |   ДА   | 100% | data/precomputed/basket_hedge.json
+  6 | Sentiment Sizing           |      50,000    | ДА  |  НЕТ   |   0% | ждёт P4 plainValueObservations
+  7 | Expedition Solver          |      50,000    | ДА  |  НЕТ   |   0% | ждёт мануальный раунд
+  8 | Bot Model Trainer          |      30,000    | ДА  |   ДА   | 100% | data/precomputed/bot_models.json
+  9 | Cointegration Scanner      |      20,000    | ДА  |   ДА   | 100% | data/precomputed/cointegration.json
+ 10 | Калибровка офлайн          |      20,000    | ДА  |   ДА   | 100% | data/precomputed/calibration.json
+ 11 | IV Surface Builder         |      10,000    | ДА  |   ДА   | 100% | data/precomputed/iv_surface.json
+ 12 | Optuna multi-day           |      10,000    | ДА  |   ДА   |  ∞%  | data/trained/optuna_study.db (24/7)
+ 13 | Spread Optimizer           |      10,000    | ДА  |   ДА   | 100% | data/precomputed/spread_optimizer.json
+ 14 | Multi-round Cumulative     |    x3 множ.    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 15 | MW Strategy Routing        |      10,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 16 | Stop Loss Manager          | saves 10,000   | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 17 | Fair Value Regressor       |       5,000    | НЕТ |  НЕТ   |   0% | надо написать
+ 18 | Regime Markov Chain        |       5,000    | НЕТ |  НЕТ   |   0% | надо написать
+ 19 | Order Flow Model           |       5,000    | НЕТ |  НЕТ   |   0% | надо написать
+ 20 | P2 Strategy Extractor      |       5,000    | НЕТ |  НЕТ   |   0% | надо написать
+ 21 | Hypothesis Registry        |       5,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 22 | Regime Detection           |       5,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 23 | Toxic Flow Detection       |       5,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 24 | Bot Fingerprinting         |       5,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 25 | Sensitivity Analysis       |       5,000    | ДА  |  НЕТ   |   0% | ./imc4.sh sensitivity (on demand)
+ 26 | IV Arb (VOUCHERS)          |       2,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 27 | Saturation Tracker         |       3,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 28 | OFI                        |       3,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 29 | Avellaneda-Stoikov MM      |       2,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 30 | Decision Tree Router       |       2,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 31 | Quote Stuffing Det.        |       2,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 32 | Momentum Ignition Det.     |       2,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 33 | Safety fix                 |       1,000    | ДА  |   ДА   | 100% | applied в FinalTrader.py
+ 34 | Sherman-Morrison VaR       |       1,000    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 35 | EMA/Kalman MM              |         500    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 36 | RESIN MM                   |          50    | ДА  |   —    | runtime | FinalTrader.py (авто)
+ 37 | Tournament стратегий       |      знание   | ДА  |  НЕТ   |   0% | ./imc4.sh tournament (on demand)
+ 38 | A/B тест                   |      знание   | ДА  |  НЕТ   |   0% | ./imc4.sh ab-test (on demand)
+
+# ═══════════════════════════════════════════════════════════════════
+# СВОДКА
+# ═══════════════════════════════════════════════════════════════════
+#
+#   Код написан:    34/38  (90%)
+#   Надо написать:   4/38  (#17 #18 #19 #20)
+#   Данные готовы:   7/38  (#5 #8 #9 #10 #11 #13 #33)
+#   Вычисляется:     1/38  (#12 Optuna 24/7)
+#   Runtime авто:   20/38  (всегда активны в FinalTrader.py)
+#   Ждут P4/manual:  5/38  (#1 #2 #3 #4 #6 #7)
+#   On demand:       3/38  (#25 #37 #38)
+#
+# ═══════════════════════════════════════════════════════════════════
+# КОМАНДЫ
+# ═══════════════════════════════════════════════════════════════════
+#
+#   ./imc4.sh bg             — запустить все 6 фоновых вычислений
+#   ./imc4.sh bg-nonstop     — 6 static + бесконечный Optuna
+#   ./imc4.sh bg-status      — показать статус всех вычислений
+#   ./imc4.sh nonstop        — только Optuna нон-стоп
+#   ./imc4.sh pnl            — быстрый тест PnL
+#
+# ДОБАВИТЬ ДАННЫЕ → удалить .DONE в data/precomputed/ → rerun ./imc4.sh bg
+# ═══════════════════════════════════════════════════════════════════

@@ -1,0 +1,185 @@
+# PERFOMANCE.TXT — Декомпозиция факторов PnL для IMC Prosperity 4
+# Цель: TOP-1 через полный охват пространства решений
+
+## УРОВЕНЬ 0: НЕДЕЛИМЫЕ АТОМЫ IMC4
+
+### РЫНОЧНЫЕ АТОМЫ
+- bid: лучшая цена покупки
+- ask: лучшая цена продажи
+- mid: (bid+ask)/2
+- spread: ask-bid
+- depth: суммарный объём на уровне цены
+- tick: один временной шаг (1 из 10000)
+- position: текущая позиция [-limit, +limit]
+- pnl: реализованная + нереализованная прибыль
+- order: (price, quantity, side)
+- fill: исполненный ордер
+- trade: market_trade между участниками
+
+### СТРАТЕГИЧЕСКИЕ АТОМЫ
+- fair_value: расчётная справедливая цена
+- signal: {buy, sell, hold}
+- regime: {trending, mean_reverting, volatile, quiet, spike, recovery}
+- alpha: предсказание будущей цены
+- edge: разница между fair_value и market_mid
+- sizing: сколько торговать
+- timing: когда торговать
+
+### МАТЕМАТИЧЕСКИЕ АТОМЫ
+- ema: экспоненциальное скользящее среднее (alpha)
+- kalman: фильтр Калмана (Q, R)
+- zscore: (x - mean) / std
+- sigma: стандартное отклонение
+- skew: асимметрия позиции
+- gamma: risk aversion (Avellaneda-Stoikov)
+- delta: чувствительность к цене базового актива
+- vega: чувствительность к волатильности
+- theta: временной распад
+- iv: implied volatility
+- bsm: Black-Scholes-Merton
+
+## УРОВЕНЬ 1: ПРОДУКТОВЫЕ КЛАССЫ (P3→P4 generic)
+
+### STABLE (RAINFOREST_RESIN)
+- Свойства: mean-reverting, low volatility, stable fair_value ~10000
+- Стратегия: MM с tight spread
+- Атомы: spread=1-6, skew_factor, ema_alpha, aggression_ticks
+- Вариации: 6 × 23 × ∞ × ∞ × 5 = ~690 × float²
+
+### VOLATILE (KELP, SQUID_INK)
+- Свойства: trending, high volatility, spike events
+- Стратегия: MM + trend following + spike detection
+- Атомы: ema_fast, ema_slow, spike_sigma, spike_window, ofi_beta
+- Вариации: ∞ × ∞ × 3.0 × 16 × ∞ = ~48 × float³
+
+### BASKET (CROISSANTS, JAMS, DJEMBES, PICNIC_BASKET1/2)
+- Свойства: cointegrated, stat-arb opportunity
+- Стратегия: zscore mean reversion + hedging
+- Атомы: zscore_enter, zscore_exit, rolling_window, hedge_recalc
+- Вариации: 3.0 × 1.4 × 901 × 251 = ~951,000
+
+### OPTIONS (VOLCANIC_ROCK + 5 VOUCHERS)
+- Свойства: BSM pricing, Greeks, IV surface
+- Стратегия: delta hedge + IV arbitrage + vega limit
+- Атомы: delta_band, iv_sell, iv_buy, min_edge, vega_limit
+- PnL driver: +855 на R3D0 (99% от VOUCHERS)
+- Вариации: 9 × ∞ × ∞ × ∞ × ∞ = 9 × float⁴
+
+### EXOTIC (MAGNIFICENT_MACARONS)
+- Свойства: conversion arb, sunlight-dependent
+- Стратегия: conversion + MM + sentiment
+- Атомы: recalc_ticks, conversion_block
+- Вариации: 901 × 15 = 13,515
+
+## УРОВЕНЬ 2: МЕТА-СТРАТЕГИИ
+
+### REGIME DETECTION (8 состояний FSM)
+- trending_up, trending_down, mean_reverting, volatile_high
+- volatile_low, spike_up, spike_down, recovery
+- Transitions: 8 × 8 = 64 перехода
+- Каждый переход → смена стратегии
+
+### BOT FINGERPRINTING
+- Olivia (insider), market_maker, trend_follower, noise_trader
+- Stuffing detector, toxic flow detector
+- Counter-strategies: 4 бота × 3 стратегии = 12 контр-пар
+
+### MULTIPLICATIVE WEIGHTS
+- 3 стратегии (mm, trend, arb) × веса [0,1]
+- Online learning: eta, loss_clip
+- Exploration vs exploitation
+
+### SAFETY MECHANISMS
+- KillSwitch: pnl_threshold, vol_threshold, drawdown_threshold
+- CircuitBreaker: loss_limit, reset_ticks
+- DrawdownController: daily_loss_pct, per_instrument_loss
+- Фазы: WARMUP → TRADING → REDUCE → LIQUIDATE → CLOSE
+
+## УРОВЕНЬ 3: ПЕРЕСЕЧЕНИЯ И КОРРЕЛЯЦИИ
+
+### PRODUCT × REGIME = 5 × 8 = 40 контекстов
+Каждый контекст → свои оптимальные params
+Пример: STABLE + volatile_high → widen spread × 3
+Пример: OPTIONS + trending_up → increase delta_band
+
+### PRODUCT × BOT = 5 × 4 = 20 пар
+Каждая пара → своя контр-стратегия
+Пример: OPTIONS + Olivia → front-run insider signal
+
+### REGIME × BOT = 8 × 4 = 32 ситуации
+Пример: spike_up + stuffing → withdraw orders, wait recovery
+
+### PRODUCT × REGIME × BOT = 5 × 8 × 4 = 160 уникальных контекстов
+Полное пространство решений для адаптивной стратегии
+
+## УРОВЕНЬ 4: СИНТЕТИЧЕСКИЕ ПОНЯТИЯ (не существуют в природе)
+
+### CROSS-PRODUCT ALPHA
+- Корреляция KELP↔SQUID → предсказание одного из другого
+- Basket residual → сигнал для options
+
+### TEMPORAL ALPHA
+- Паттерн tick 0-100 (open auction) → aggressive
+- Паттерн tick 9000-10000 (close) → liquidation pressure
+- Паттерн tick 5000 (mid-day regime shift)
+
+### META-LEARNING ALPHA
+- Оптимальный param drift: params меняются в зависимости от tick
+- Phase-dependent params: warm_spread ≠ trade_spread ≠ close_spread
+
+### ADVERSARIAL ALPHA
+- Если 90% участников используют BS → кривая IV нестандартная → edge
+- Если ботам известна наша стратегия → randomize timing/sizing
+
+## ФОРМУЛА ПОЛНОГО ПРОСТРАНСТВА
+
+### Discrete:
+- 5 product_classes × 8 regimes × 4 bot_types × 3 strategies × 5 phases = 2,400 контекстов
+- 57 params с ~8.3×10^36 комбинаций
+
+### Continuous:
+- 32 float params × бесконечная точность = ∞
+
+### Practical:
+- Optuna TPE: ~15,000 trials за 15 дней
+- Покрытие: 15000 / 8.3e36 ≈ 0.000000000000000000000000000000002%
+- НО: TPE Bayesian optimization фокусируется на перспективных областях
+- Реальное эффективное покрытие: ~1-5% в важных регионах
+
+## УРОВЕНЬ 5: ЧТО МОЖЕТ ДАТЬ ×10 PnL
+
+### PRNG CRACK (если возможно)
+- Предсказание следующей цены → идеальный timing → PnL × 10-100
+- Требует: live P4 данные, ~10000 тиков для анализа
+
+### INSIDER BOT DETECTION
+- Olivia bot торгует до публичных новостей
+- Detect → front-run → PnL × 2-5
+
+### LATENCY EXPLOIT
+- Если наш код быстрее → видим ордера раньше
+- FinalTrader: O(1) на тик, 2.4ms/тик
+
+### IV SURFACE ARBITRAGE
+- Уже работает: +855 PnL на R3D0
+- Улучшение: динамический delta_band per strike
+
+### CONVERSION ARBITRAGE (MACARONS)
+- Купить на одном рынке, конвертировать, продать на другом
+- Требует: live данные по sunlight/humidity
+
+## ИТОГО
+- Текущий PnL: +855/день (R3D0), +591 на 9 днях
+- Потолок без PRNG: ~2000-5000/день (через spread opt + IV + conversion)
+- Потолок с PRNG: ~50,000+/день (предсказание цен)
+- 15 дней × 1000 trials/день = 15000 trials → оценка потолка
+
+Просто как вариант если все способы достичь максимальный пнл достигнуты тогда выполняй это:
+110 Мне не нужен код, но пока у тебя есть токены.Давай так вот 1000 токенов пока не потратишь будешь словами и цифрами писать пункты для imc 4 которые поспособствуют достижению топ 1. Результаты записывай в файл perfomance.txt. Записывай уникальные значения + все вариации+все комбинации все между ними, то есть проводи декомпозиции до неделимого + потом создавай слова определения на пересечениях между значениями и явлениями и продолжай эти процессы бесконечно. Цель собрать полный мир который хоть как либо в трехмерном евклидовом пространстве можно применить к imc 4 чтобы улучшить результаты pnl. Не надо расписывать все. Алгоритм:
+1.Сбор до тех пор пока перестанут появляться новые явления применимые хоть как-либо к imc 4.
+2. Каждому явлению писать свойства например парнокопытное, писать все свойства пока не начнет повторяться и не обнаружиться что больши ничего нет и так до неделимого.
+3.Написать формулу конечную числа вариаций 1*2*3 и тд.
+4. Между всеми ними 3 шагами строить корреляции 1*2*3 и тд.
+5. Придумывать новые значения которых нет в природе опираясь и исходя из пересечений всей шагов по уровням
+
+Правило. Учитывай токены. сообщать на каком шагу сколько токенов осталось. Если известно что результат не даст или прогон вариаций до x10 не дал результат и не поспособствует росту pnl тогда оставь комментарий и иди дальше.

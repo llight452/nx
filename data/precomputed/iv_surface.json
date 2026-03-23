@@ -1,0 +1,64 @@
+{
+  "VOLCANIC_ROCK_VOUCHER_9500": {
+    "strike": 9500,
+    "mean_iv": 0.1872,
+    "std_iv": 0.041,
+    "min_iv": 0.1078,
+    "max_iv": 0.3077,
+    "median_iv": 0.1868,
+    "datapoints": 74925,
+    "moneyness": 1.0709
+  },
+  "VOLCANIC_ROCK_VOUCHER_9750": {
+    "strike": 9750,
+    "mean_iv": 0.1489,
+    "std_iv": 0.0293,
+    "min_iv": 0.0864,
+    "max_iv": 0.2443,
+    "median_iv": 0.1457,
+    "datapoints": 113276,
+    "moneyness": 1.0435
+  },
+  "VOLCANIC_ROCK_VOUCHER_10000": {
+    "strike": 10000,
+    "mean_iv": 0.1307,
+    "std_iv": 0.0233,
+    "min_iv": 0.0756,
+    "max_iv": 0.2078,
+    "median_iv": 0.1271,
+    "datapoints": 122113,
+    "moneyness": 1.0174
+  },
+  "VOLCANIC_ROCK_VOUCHER_10250": {
+    "strike": 10250,
+    "mean_iv": 0.1285,
+    "std_iv": 0.0188,
+    "min_iv": 0.0714,
+    "max_iv": 0.1729,
+    "median_iv": 0.1305,
+    "datapoints": 123000,
+    "moneyness": 0.9926
+  },
+  "VOLCANIC_ROCK_VOUCHER_10500": {
+    "strike": 10500,
+    "mean_iv": 0.1455,
+    "std_iv": 0.0218,
+    "min_iv": 0.0713,
+    "max_iv": 0.2144,
+    "median_iv": 0.1458,
+    "datapoints": 122981,
+    "moneyness": 0.969
+  },
+  "_smile_params": {
+    "a": 1.447e-07,
+    "b": -4.2e-05,
+    "c": 0.1301,
+    "atm_strike": 10000,
+    "atm_iv": 0.1301
+  },
+  "_rock_stats": {
+    "mean": 10174.0,
+    "std": 174.45,
+    "datapoints": 123000
+  }
+}
